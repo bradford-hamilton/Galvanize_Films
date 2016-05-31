@@ -1,6 +1,7 @@
 body {
   background-image: url('movieReel.jpg');
   background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .navigation {

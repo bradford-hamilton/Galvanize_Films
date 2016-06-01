@@ -5,10 +5,9 @@ $(document).ready(function() {
       var movieName = $('#movie-search').val();
       event.preventDefault();
       $.ajax({
-      url: 'https://api.themoviedb.org/3/search/movie/?api_key=23d39666c667c080fa38d23936073bb1&query=' + movieName,
+      url: 'https://galvanize-cors-proxy.herokuapp.com/https://api.themoviedb.org/3/search/movie/?api_key=23d39666c667c080fa38d23936073bb1&query=' + movieName,
       type: 'GET',
-      crossDomain: true,
-      dataType: 'jsonp',
+      dataType: 'JSON',
       success: function(data) {
         return data;
       },

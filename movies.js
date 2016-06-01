@@ -17,10 +17,10 @@ $(document).ready(function() {
     // Use returned data
     }).done(function(data) {
       console.log(data);
-      $('ul').append('<li>' + data.message + '</li>');
+      $('ul').html('<li>' + data.message + '</li>');
     }).fail(function(error) {
       var msg = JSON.parse(error.responseText).message;
-      $('ul').append(msg);
+      $('ul').html(msg);
     });
   });
 
